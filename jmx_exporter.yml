@@ -1,0 +1,18 @@
+---
+# Delay before the exporter starts scraping (seconds)
+startDelaySeconds: 0
+jmxUrl: ""
+# Example of common JVM metrics
+lowercaseOutputName: true
+lowercaseOutputLabelNames: true
+whitelistObjectNames:
+  - "java.lang:type=OperatingSystem"
+  - "java.lang:type=Memory"
+  - "java.lang:type=Runtime"
+
+# Other common metrics to expose
+whitelistAttributes:
+  - "CpuLoad"
+  - "FreeMemorySize"
+  - "HeapMemoryUsage"
+  - "Uptime"
